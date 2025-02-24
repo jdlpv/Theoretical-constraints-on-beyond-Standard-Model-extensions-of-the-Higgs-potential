@@ -60,9 +60,11 @@ This code shall be understood as an attached file to the Master's Thesis mention
    - Select **"Jupyter (venv)"**.
 
 ## License
+
 This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. 
 
 ### Summary of the License:
+
 - You are free to **share** (copy and redistribute) and **adapt** (remix, transform, and build upon) this work for any purpose.
 - You must provide **appropriate credit**, link to the license, and indicate if changes were made.
 - No additional restrictions can be applied beyond those stated in the license.
@@ -70,8 +72,6 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 For more details, refer to the full license: [CC BY 4.0](https://choosealicense.com/licenses/cc-by-4.0/).
 
 ## Contact
-For any questions or further information, feel free to contact the Author.
-
 
 For any questions or further information, feel free to contact the Author at:
 
