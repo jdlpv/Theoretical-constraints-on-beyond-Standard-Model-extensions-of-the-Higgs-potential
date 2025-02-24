@@ -17,14 +17,17 @@ This code shall be understood as an attached file to the Master's Thesis mention
    ```bash
    git clone https://github.com/jdlpv/Theoretical-constraints-on-beyond-Standard-Model-extensions-of-the-Higgs-potential
    ```
+
 2. Navigate into the project folder:
    ```bash
    cd Theoretical-constraints-on-beyond-Standard-Model-extensions-of-the-Higgs-potential
    ```
-3. Set up a virtual environment:
+
+3. Create a virtual environment:
    ```bash
    python -m venv venv
    ```
+
 4. Activate the virtual environment:
    - On Windows:
      ```bash
@@ -32,14 +35,29 @@ This code shall be understood as an attached file to the Master's Thesis mention
      ```
    - On macOS/Linux:
      ```bash
-     source venv/bin/activate
+     source myenv/bin/activate
      ```
-5. Install ipykernel in the virtual environment
 
-6. Install dependencies:
+5. Install Jupyter and dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+
+### Additional steps (when using Jupyter Notebook IDE)
+
+6. Add the virtual environment to Jupyter:
+   ```bash
+   python -m ipykernel install --user --name=venv --display-name "Jupyter (venv)"
+   ```
+
+5. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+   Then, in Jupyter:
+   - Open a new notebook.
+   - Go to **Kernel > Change Kernel**.
+   - Select **"Jupyter (venv)"**.
 
 ## License
 This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. 
@@ -52,6 +70,9 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 For more details, refer to the full license: [CC BY 4.0](https://choosealicense.com/licenses/cc-by-4.0/).
 
 ## Contact
+For any questions or further information, feel free to contact the Author.
+
+
 For any questions or further information, feel free to contact the Author at:
 
 - javier.delapena.vico@gmail.com 
