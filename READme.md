@@ -2,13 +2,13 @@
 
 Complutense University of Madrid, Faculty of Physics, Theoretical Physics Department.
 
-Master's Thesis title: Theoretical constraints on beyond Standard Model extensions of the Higgs potential.
+**Master's Thesis title**: Theoretical constraints on beyond Standard Model extensions of the Higgs potential.
 
-Author: Javier Eloy de la Peña Vico.
+**Author**: Javier Eloy de la Peña Vico.
 
-Tutors: Juan José Sanz Cillero and Carlos Ariel Quezada Calonge.
+**Tutors**: Juan José Sanz Cillero and Carlos Ariel Quezada Calonge.
 
-## [!IMPORTANT] 
+## **IMPORTANT**
 This code shall be understood as an attached file to the Master's Thesis mentioned hererinabove. It should never be treated "AS IS".
 
 ## Installation
@@ -47,7 +47,7 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 - You must provide **appropriate credit**, link to the license, and indicate if changes were made.
 - No additional restrictions can be applied beyond those stated in the license.
 
-For more details, refer to the full license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+For more details, refer to the full license: [CC BY 4.0](https://choosealicense.com/licenses/cc-by-4.0/).
 
 ## Contact
 For any questions or further information, feel free to contact the Author at:
