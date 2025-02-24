@@ -35,7 +35,7 @@ This code shall be understood as an attached file to the Master's Thesis mention
      ```
    - On macOS/Linux:
      ```bash
-     source myenv/bin/activate
+     source venv/bin/activate
      ```
 
 5. Install Jupyter and dependencies:
