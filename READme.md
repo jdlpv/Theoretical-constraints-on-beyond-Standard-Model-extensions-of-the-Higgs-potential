@@ -19,7 +19,7 @@ This code shall be understood as an attached file to the Master's Thesis mention
    ```
 2. Navigate into the project folder:
    ```bash
-   cd TFM
+   cd Theoretical-constraints-on-beyond-Standard-Model-extensions-of-the-Higgs-potential
    ```
 3. Set up a virtual environment:
    ```bash
@@ -34,7 +34,9 @@ This code shall be understood as an attached file to the Master's Thesis mention
      ```bash
      source venv/bin/activate
      ```
-5. Install dependencies:
+5. Install ipykernel in the virtual environment
+
+6. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
