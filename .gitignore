@@ -1,0 +1,50 @@
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Python files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# Data and cache files
+*.csv
+*.json
+*.pkl
+*.pickle
+*.db
+*.sqlite3
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Logs and outputs
+*.log
+*.out
+
+# Environment variables
+.env
+.env.*
+
+# Archives and temporary files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*~
