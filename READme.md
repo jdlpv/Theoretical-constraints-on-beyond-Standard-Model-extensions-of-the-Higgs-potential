@@ -11,7 +11,7 @@ Complutense University of Madrid, Faculty of Physics, Theoretical Physics Depart
 ## **IMPORTANT**
 This code shall be understood as an attached file to the Master's Thesis mentioned hererinabove. It should never be treated "AS IS".
 
-To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need to run code). For the figures referenced in the Thesis, refer to [Figures.m](Figures.m) (running th code is required).
+To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need to run code). For the figures referenced in the Thesis, see [Figures.m](Figures.m) (running th code is required).
 
 ## Installation
 
@@ -52,7 +52,7 @@ To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need t
    python -m ipykernel install --user --name=venv --display-name "Jupyter (venv)"
    ```
 
-5. Launch Jupyter Notebook:
+7. Launch Jupyter Notebook:
    ```bash
    jupyter notebook
    ```
@@ -60,6 +60,8 @@ To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need t
    - Open a new notebook.
    - Go to **Kernel > Change Kernel**.
    - Select **"Jupyter (venv)"**.
+
+8. In order to run [Figures.m](Figures.m), please ensure that MATLAB is properly installed on your system. Open and run the script.
 
 ## License
 
