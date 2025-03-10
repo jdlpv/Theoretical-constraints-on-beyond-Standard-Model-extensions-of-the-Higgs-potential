@@ -45,14 +45,18 @@ To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need t
    pip install -r requirements.txt
    ```
 
-### Additional steps (when using Jupyter Notebook IDE)
+### Additional steps (when using MATLAB)
 
-6. Add the virtual environment to Jupyter:
+6. In order to run [Figures.m](Figures.m), please ensure that MATLAB is properly installed on your system. Open and run the script.
+
+### Additional steps (if using Jupyter Notebook IDE)
+
+7. Add the virtual environment to Jupyter:
    ```bash
    python -m ipykernel install --user --name=venv --display-name "Jupyter (venv)"
    ```
 
-7. Launch Jupyter Notebook:
+8. Launch Jupyter Notebook:
    ```bash
    jupyter notebook
    ```
@@ -61,7 +65,6 @@ To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need t
    - Go to **Kernel > Change Kernel**.
    - Select **"Jupyter (venv)"**.
 
-8. In order to run [Figures.m](Figures.m), please ensure that MATLAB is properly installed on your system. Open and run the script.
 
 ## License
 
