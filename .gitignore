@@ -48,3 +48,21 @@ Thumbs.db
 
 # Backup files
 *~
+
+# MATLAB files
+*.asv    # Archivos de autoguardado de MATLAB
+*.fig    # Archivos de figuras de MATLAB
+*.mat    # Archivos de datos de MATLAB
+*.mex*   # Archivos compilados de MATLAB (MEX)
+*.slxc   # Archivos de caché de Simulink
+*.mdl    # Archivos antiguos de Simulink
+*.slx    # Archivos modernos de Simulink (si no quieres compartirlos)
+
+# Other files
+*.png
+*.jpg
+*.svg
+*.eps
+*.pdf
+*.tiff
+*.xlsx
