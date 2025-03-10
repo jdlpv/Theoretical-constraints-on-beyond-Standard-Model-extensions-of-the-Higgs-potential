@@ -11,6 +11,8 @@ Complutense University of Madrid, Faculty of Physics, Theoretical Physics Depart
 ## **IMPORTANT**
 This code shall be understood as an attached file to the Master's Thesis mentioned hererinabove. It should never be treated "AS IS".
 
+To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need to run code). For the figures referenced in the Thesis, refer to [Figures.m](Figures.m) (running th code is required).
+
 ## Installation
 
 1. Clone the repository:

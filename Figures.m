@@ -631,3 +631,137 @@ colorbar
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
 title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Z_2-violating potential (general case)
+
+figure('Units','pixels', 'Position', [0, 0, 1000, 1500])
+
+subplot(4,2,1)
+rho_3_eff=10;
+u=1;
+v=-1;
+s=linspace(0,pi/2,1000);
+f=(rho_3_eff-1).*sin(2.*s).^2+u.*sin(2.*s)+2+v.*sin(2.*s).*cos(2.*s);
+plot(s,f,'m','linewidth',1.5)
+grid on
+ylim([-3,12.5])
+xlim([0,pi/2])
+xlabel('$\chi$','fontsize',15,'Interpreter','Latex')
+title('$f(\chi)$','fontsize',15,'Interpreter','Latex')
+hold on
+zeros_vector=linspace(0,0,10);
+w_eje=linspace(0,pi/2,10);
+plot(w_eje,zeros_vector,'--k', 'linewidth', 1)
+
+hold on
+
+subplot(4,2,2)
+
+rho_3_eff=10;
+rho_6_eff=0;
+rho_7_eff=1;
+
+zv=(1/2).*xv.^2+(1/2).*yv.^2+rho_3_eff.*xv.*yv+rho_6_eff.*xv.*sqrt(xv.*yv)+rho_7_eff.*yv.*sqrt(xv.*yv);
+contourf(xv,yv,zv)
+colorbar
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
+title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
+
+hold on
+
+subplot(4,2,3)
+rho_3_eff=10;
+u=-8;
+v=-12;
+f=(rho_3_eff-1).*sin(2.*s).^2+u.*sin(2.*s)+2+v.*sin(2.*s).*cos(2.*s);
+plot(s,f,'m','linewidth',1.5)
+grid on
+ylim([-6,8])
+xlim([0,pi/2])
+xlabel('$\chi$','fontsize',15,'Interpreter','Latex')
+title('$f(\chi)$','fontsize',15,'Interpreter','Latex')
+hold on
+plot(w_eje,zeros_vector,'--k', 'linewidth', 1)
+
+hold on
+
+subplot(4,2,4)
+
+rho_3_eff=10;
+rho_6_eff=-10;
+rho_7_eff=2;
+
+zv=(1/2).*xv.^2+(1/2).*yv.^2+rho_3_eff.*xv.*yv+rho_6_eff.*xv.*sqrt(xv.*yv)+rho_7_eff.*yv.*sqrt(xv.*yv);
+contourf(xv,yv,zv)
+colorbar
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
+title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
+
+hold on
+
+subplot(4,2,5)
+rho_3_eff=10;
+u=12;
+v=8;
+f=(rho_3_eff-1).*sin(2.*s).^2+u.*sin(2.*s)+2+v.*sin(2.*s).*cos(2.*s);
+plot(s,f,'m','linewidth',1.5)
+grid on
+ylim([-6,25.5])
+xlim([0,pi/2])
+xlabel('$\chi$','fontsize',15,'Interpreter','Latex')
+title('$f(\chi)$','fontsize',15,'Interpreter','Latex')
+hold on
+plot(w_eje,zeros_vector,'--k', 'linewidth', 1)
+
+hold on
+
+subplot(4,2,6)
+
+rho_3_eff=10;
+rho_6_eff=10;
+rho_7_eff=2;
+
+zv=(1/2).*xv.^2+(1/2).*yv.^2+rho_3_eff.*xv.*yv+rho_6_eff.*xv.*sqrt(xv.*yv)+rho_7_eff.*yv.*sqrt(xv.*yv);
+contourf(xv,yv,zv)
+colorbar
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
+title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
+
+subplot(4,2,7)
+rho_3_eff=10;
+u=-8;
+v=12;
+f=(rho_3_eff-1).*sin(2.*s).^2+u.*sin(2.*s)+2+v.*sin(2.*s).*cos(2.*s);
+
+plot(s,f,'m','linewidth',1.5)
+grid on
+ylim([-6,8])
+xlim([0,pi/2])
+xlabel('$\chi$','fontsize',15,'Interpreter','Latex')
+title('$f(\chi)$','fontsize',15,'Interpreter','Latex')
+hold on
+plot(w_eje,zeros_vector,'--k', 'linewidth', 1)
+
+
+hold on
+
+subplot(4,2,8)
+
+rho_3_eff=10;
+rho_6_eff=2;
+rho_7_eff=-10;
+
+zv=(1/2).*xv.^2+(1/2).*yv.^2+rho_3_eff.*xv.*yv+rho_6_eff.*xv.*sqrt(xv.*yv)+rho_7_eff.*yv.*sqrt(xv.*yv);
+contourf(xv,yv,zv)
+colorbar
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
+title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
