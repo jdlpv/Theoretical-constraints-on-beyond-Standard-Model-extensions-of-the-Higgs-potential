@@ -11,9 +11,9 @@ Complutense University of Madrid, Faculty of Physics, Theoretical Physics Depart
 ## **IMPORTANT**
 This code shall be understood as an attached file to the Master's Thesis mentioned hererinabove. It should never be treated "AS IS".
 
-To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need to run code). For the figures referenced in the Thesis, see [Figures.m](Figures.m) (running the code is required) and [parameter_visualizer.py](parameter_visualizer.py) (running the code is not necessary). 
+To continue reading the Master's Thesis, see [main.ipynb](main.ipynb) (no need to run code). For the figures referenced in the Thesis, see [Figures.m](Figures.m) (running the code is required) and [parameter_visualizer.ipynb](parameter_visualizer.ipynb) (running the code is not necessary). 
 
-In order to replicate this procedure, you may either run [main.ipynb](main.ipynb) (this Jupyter notebook will generate all the points and plots), or first execute [parameter_visualizer.py](parameter_visualizer.py), which will generate three text files (.txt) that can subsequently be read using [parameter_visualizer.ipynb](parameter_visualizer.ipynb).
+In order to replicate this procedure, you may either run [main.ipynb](main.ipynb) (this Jupyter notebook will generate all the points and plots), or first execute [parameter_calculator.py](parameter_calculator.py), which will generate three text files (.txt) that can subsequently be read using [parameter_visualizer.ipynb](parameter_visualizer.ipynb).
 
 ## Installation
 
