@@ -190,7 +190,7 @@ contourf(x_1,y_1,rho_eff_1)
 hold on
 plot(zeros_vector_1,w_eje_1,'.r','MarkerSize', 15)
 plot(r_eje,b_eje,'.r','MarkerSize', 15)
-plot(1,-1,'or','MarkerSize', 10)
+plot(1,-1,'or','MarkerSize', 10,'LineWidth', 2)
 colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
@@ -224,7 +224,7 @@ contourf(x_1,y_1,rho_eff_1)
 hold on
 plot(zeros_vector_1,w_eje_1,'.r','MarkerSize', 15)
 plot(r_eje,b_eje,'.r','MarkerSize', 15)
-plot(1,-1,'or','MarkerSize', 10)
+plot(1,-1,'or','MarkerSize', 10,'LineWidth', 2)
 colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
@@ -335,7 +335,7 @@ subplot(2,2,1)
 rho_eff_1=rho_3+x_1.*rho_4+x_1.*rho_5.*y_1;
 contourf(x_1,y_1,rho_eff_1)
 hold on
-plot(1,-1,'or','MarkerSize', 10)
+plot(1,-1,'or','MarkerSize', 10, 'LineWidth', 2)
 colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
@@ -367,7 +367,7 @@ subplot(2,2,3)
 rho_eff_1=rho_3+x_1.*rho_4+x_1.*rho_5.*y_1;
 contourf(x_1,y_1,rho_eff_1)
 hold on
-plot(1,-1,'or','MarkerSize', 10)
+plot(1,-1,'or','MarkerSize', 10, 'LineWidth', 2)
 colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
@@ -412,8 +412,8 @@ ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',25,'Interpreter',
 title('$V^{Z_2}_{2HDM}$','fontsize',25,'Interpreter','Latex')
 
 hold on
-plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
-plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
+plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
+plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
 
 sigma_1=1;
@@ -430,8 +430,8 @@ ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',25,'Interpreter',
 title('$V^{Z_2}_{2HDM}$','fontsize',25,'Interpreter','Latex')
 
 hold on
-plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
-plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
+plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
+plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
 print(fig, 'Quadratic_terms.png', '-dpng', '-r600')
 
