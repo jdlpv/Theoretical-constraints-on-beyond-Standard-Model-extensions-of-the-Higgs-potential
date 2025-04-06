@@ -4,7 +4,7 @@ close all
 
 % Z_2-conserving xSM
 
-figure('Units','pixels', 'Position', [400, 400, 800, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 800, 800]);
 
 subplot(3,2,1)
 x_raw=linspace(-10,10,1000);
@@ -95,11 +95,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
+print(fig, 'xSM.png', '-dpng', '-r600')
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Z_2-conserving 2HDM Case 1
 
-figure('Units','pixels', 'Position', [400, 400, 800, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 800, 800]);
 
 rho_3=1;
 rho_4=2;
@@ -167,13 +169,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-
+print(fig, 'Z2_2HDM_case1.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Z_2-conserving 2HDM Case 2
 
-figure('Units','pixels', 'Position', [400, 400, 800, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 800, 800]);
 
 rho_3=1;
 rho_4=1;
@@ -243,13 +245,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-
+print(fig, 'Z2_2HDM_case2.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Z_2-conserving 2HDM Case 3
 
-figure('Units','pixels', 'Position', [400, 400, 800, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 800, 800]);
 
 rho_3=1;
 rho_4=-1;
@@ -315,13 +317,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-
+print(fig, 'Z2_2HDM_case3.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Z_2-conserving 2HDM Case 4
 
-figure('Units','pixels', 'Position', [400, 400, 800, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 800, 800]);
 
 rho_3=1;
 rho_4=0;
@@ -386,13 +388,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-
+print(fig, 'Z2_2HDM_case4.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Quadratic Terms and loops (Master's Thesis section)
 
-figure('Units','pixels', 'Position', [400, 400, 1600, 800])
+fig = figure('Units','pixels', 'Position', [400, 400, 1600, 800]);
 
 sigma_1=1;
 sigma_2=-10;
@@ -431,13 +433,13 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-
+print(fig, 'Quadratic_terms.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Symmetric Z_2-violating potential
 
-figure('Units','pixels', 'Position', [0, 0, 1000, 1500])
+fig = figure('Units','pixels', 'Position', [0, 0, 1000, 1500]);
 
 subplot(6,2,1)
 rho_3_eff=1.5;
@@ -632,14 +634,13 @@ xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter',
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
 title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
 
-
-
+print(fig, 'Symmetric_2HDM.png', '-dpng', '-r600')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Z_2-violating potential (general case)
 
-figure('Units','pixels', 'Position', [0, 0, 1000, 1500])
+fig = figure('Units','pixels', 'Position', [0, 0, 1000, 1500]);
 
 subplot(4,2,1)
 rho_3_eff=10;
@@ -765,3 +766,5 @@ colorbar
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
 title('$V^{\ \backslash\hspace*{-0.18cm}Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
+
+print(fig, 'Antisymmetric_2HDM.png', '-dpng', '-r600')
