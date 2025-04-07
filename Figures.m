@@ -15,8 +15,8 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',15,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',15,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
 title('$\rho_{3}=2$','fontsize',20,'Interpreter','Latex')
 
 hold on
@@ -122,7 +122,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,2)
 
@@ -153,7 +153,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,4)
 
@@ -195,7 +195,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,2)
 
@@ -229,7 +229,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,4)
 
@@ -269,7 +269,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,2)
 
@@ -301,7 +301,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,4)
 
@@ -340,7 +340,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,2)
 
@@ -372,7 +372,7 @@ colorbar
 title('$\ \ \rho^{eff}_3$','fontsize',30,'Interpreter','Latex')
 grid on
 xlabel('$r^2$','fontsize',30,'Interpreter','Latex')
-ylabel('$cos(\gamma+\beta)$','fontsize',30,'Interpreter','Latex')
+ylabel('$cos(\alpha_{5}+\phi)$','fontsize',30,'Interpreter','Latex')
 
 subplot(2,2,4)
 
