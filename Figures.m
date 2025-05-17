@@ -4,7 +4,7 @@ close all
 
 % Z_2-conserving xSM
 
-fig = figure('Units','pixels', 'Position', [400, 400, 800, 1000]);
+fig = figure('Units','pixels', 'Position', [100, 100, 1000, 1200]);
 
 subplot(3,2,1)
 x_raw=linspace(-10,10,1000);
@@ -15,9 +15,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=2$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=2$','fontsize',25,'Interpreter','Latex')
 
 hold on
 zeros_vector=linspace(0,0,10);
@@ -31,9 +31,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=1$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=1$','fontsize',25,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
@@ -45,9 +45,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=1/2$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=1/2$','fontsize',25,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
@@ -59,9 +59,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=-1/2$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=-1/2$','fontsize',25,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
@@ -73,9 +73,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=-1$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=-1$','fontsize',25,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
@@ -87,9 +87,9 @@ V=1/2.*x.^2+1/2.*y.^2+rho_3.*x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1}$','fontsize',20,'Interpreter','Latex')
-ylabel('$y=S^2\sqrt{\lambda_2}$','fontsize',20,'Interpreter','Latex')
-title('$\rho_{3}=-2$','fontsize',20,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
+ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+title('$\rho_{3}=-2$','fontsize',25,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
@@ -394,7 +394,7 @@ print(fig, 'Z2_2HDM_case4.png', '-dpng', '-r1000')
 
 % Quadratic Terms and loops (Master's Thesis section)
 
-fig = figure('Units','pixels', 'Position', [400, 400, 1000, 400]);
+fig = figure('Units','pixels', 'Position', [100, 100, 1800, 500]);
 
 sigma_1=1;
 sigma_2=-10;
