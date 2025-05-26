@@ -17,6 +17,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=2$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -33,6 +34,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=1$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -47,6 +49,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=1/2$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -61,6 +64,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=-1/2$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -75,6 +79,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=-1$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -89,6 +94,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}\Phi\sqrt{\lambda_1 /2}$','fontsize',25,'Interpreter','Latex')
 ylabel('$y=S^2\sqrt{\lambda_2 /2}$','fontsize',25,'Interpreter','Latex')
+set(gca, 'FontSize', 19)
 title('$\rho_{3}=-2$','fontsize',25,'Interpreter','Latex')
 
 hold on
@@ -132,6 +138,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
@@ -205,12 +212,12 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
-
 
 rho_3=-1;
 rho_4=1;
@@ -239,6 +246,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
@@ -279,12 +287,12 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
-
 
 rho_3=-1;
 rho_4=-1;
@@ -311,6 +319,7 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
@@ -350,12 +359,12 @@ colorbar
 grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
-
 
 rho_3=-1;
 rho_4=0;
@@ -383,7 +392,6 @@ grid on
 xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
 ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
 title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
-
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
@@ -394,22 +402,20 @@ print(fig, 'Z2_2HDM_case4.png', '-dpng', '-r1000')
 
 % Quadratic Terms and loops (Master's Thesis section)
 
-fig = figure('Units','pixels', 'Position', [100, 100, 1800, 500]);
+fig = figure('Units','pixels', 'Position', [100, 100, 1200, 500]);
 
 sigma_1=1;
 sigma_2=-10;
 
 
 subplot(1,2,1)
-title('$V^{Z_2}_{2HDM}$','fontsize',15,'Interpreter','Latex')
-
 V=-sigma_1.*x-sigma_2.*y+1/2.*x.^2+1/2.*y.^2-x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',25,'Interpreter','Latex')
-ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',25,'Interpreter','Latex')
-title('$V^{Z_2}_{2HDM}$','fontsize',25,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
@@ -425,9 +431,9 @@ V=-sigma_1.*x-sigma_2.*y+1/2.*x.^2+1/2.*y.^2-x.*y;
 contourf(x,y,V)
 colorbar
 grid on
-xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',25,'Interpreter','Latex')
-ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',25,'Interpreter','Latex')
-title('$V^{Z_2}_{2HDM}$','fontsize',25,'Interpreter','Latex')
+xlabel('$x=\Phi^{\dagger}_1\Phi_1\sqrt{\lambda_1}$','fontsize',30,'Interpreter','Latex')
+ylabel('$y=\Phi^{\dagger}_2\Phi_2\sqrt{\lambda_2}$','fontsize',30,'Interpreter','Latex')
+title('$V^{Z_2}_{2HDM}$','fontsize',30,'Interpreter','Latex')
 
 hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
