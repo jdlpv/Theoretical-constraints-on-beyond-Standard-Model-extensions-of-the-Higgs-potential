@@ -101,7 +101,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 1.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 1.5)
 
-print(fig, 'xSM.png', '-dpng', '-r1000')
+print(fig, 'xSM.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,7 +176,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
-print(fig, 'Z2_2HDM_case1.png', '-dpng', '-r1000')
+print(fig, 'Z2_2HDM_case1.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -253,7 +253,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
-print(fig, 'Z2_2HDM_case2.png', '-dpng', '-r1000')
+print(fig, 'Z2_2HDM_case2.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -326,7 +326,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
-print(fig, 'Z2_2HDM_case3.png', '-dpng', '-r1000')
+print(fig, 'Z2_2HDM_case3.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -396,7 +396,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
-print(fig, 'Z2_2HDM_case4.png', '-dpng', '-r1000')
+print(fig, 'Z2_2HDM_case4.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -439,7 +439,7 @@ hold on
 plot(w_eje,zeros_vector,'--w', 'linewidth', 2.5)
 plot(zeros_vector,w_eje,'--w', 'linewidth', 2.5)
 
-print(fig, 'Quadratic_terms.png', '-dpng', '-r600')
+print(fig, 'Quadratic_terms.png', '-dpng', '-r300')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
