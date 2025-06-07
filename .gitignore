@@ -68,9 +68,7 @@ Thumbs.db
 *.xlsx
 
 # Created files
-Z2_violating_valid_values.txt
-symmetric_valid_values.txt
-antisymmetric_valid_values.txt
+*txt
 
 physical_parameters.ipynb
 Higgs_basis1.ipynb
