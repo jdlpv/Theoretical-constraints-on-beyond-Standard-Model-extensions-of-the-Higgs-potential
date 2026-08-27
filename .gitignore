@@ -1,7 +1,2 @@
-# Files
-*.png
-*.csv
-*.txt
-
 # Rust
 /target
