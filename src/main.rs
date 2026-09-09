@@ -41,6 +41,12 @@ use rayon::prelude::*;
 
 //============================ General values ============================//
 
+/* Number π */
+pub const PI: f64 = std::f64::consts::PI;
+
+/* The tolerance of the algorithm */
+pub const EPSILON: f64 = 1.0E-7;
+
 /* The population number */
 const POPULATION_NUMBER: usize = 100;
 
@@ -62,15 +68,9 @@ const MAX_ITER: usize = 100;
 /* The minimum number of iterations */
 const MIN_ITER: usize = 5;
 
-/* The tolerance of the algorithm */
-const EPSILON: f64 = 1.0E-7;
-
 /* The maximum value of the parameters */
 /* It is advisable to choose a border that is bigger than the region to be plotted */
 const PARAMETERS_BORDER: f64 = 80.0;
-
-/* Number π */
-const PI: f64 = std::f64::consts::PI;
 
 /* The file that contains valid parameters */
 const PARAMETERS_FILE_NAME: &str = "Z2_violating_parameters.txt";
@@ -212,15 +212,6 @@ fn main() {
                             // obtain the value -u, which can lead to a lower value
                             // of the potential that the best1bin algorithm could not found.
                             if new_potential < old_potential {
-                                println!("
-                                    Old variable: {} {} {}, Old potential: {}, Old u: {}
-                                    New variable: {} {} {}, New potential: {}, New u: {}
-                                    Check that new_u = - old_u
-                                ",
-                                variable.r, variable.phi, variable.chi, old_potential, u,
-                                auxiliar_variable.r, auxiliar_variable.phi, auxiliar_variable.chi, new_potential,
-                                parameter.rho_6 * auxiliar_variable.r * (parameter.alpha_6 + 0.5 * auxiliar_variable.phi).cos() + parameter.rho_7 * auxiliar_variable.r * (parameter.alpha_7 + 0.5 * auxiliar_variable.phi).cos()
-                                );
                                 return (auxiliar_variable, true);
                             }
                         }
@@ -237,29 +228,36 @@ fn main() {
 
         let number_max: i64 = number_max_iterations.load(Ordering::Relaxed);
         let number_min: i64 = number_min_iterations.load(Ordering::Relaxed);
-        println!("Saving results... (Batch {}/{}). Number of times MAX_ITER was reached (the algorithm might not be converging) --> {}/{}. Number of times last iteration was MIN_ITER (the algorithm converges early) --> {}/{}. Not saved: {} cases",
+        println!("Saving results... (Batch {}/{}). Number of times MAX_ITER was reached (the algorithm might not be converging) --> {}/{}. Number of times last iteration was MIN_ITER (the algorithm converges early) --> {}/{}.",
             batch,
             BATCH_NUMBER,
             number_max,
             parameters_per_batch,
             number_min,
-            parameters_per_batch,
-            number_max + number_min
+            parameters_per_batch
         );
 
         // Initialize the result vector
         let mut parameter_results: Vec<&Parameters> = Vec::new();
         let mut best_vector_results: Vec<&Variables> = Vec::new();
 
-        // Fill the result vector only if they are valid (the minimum value of the potential, given by bests[idx], is greater than zero)
+        // Fill the result vector only if they are valid: 
+        // - The minimum value of the potential, given by bests[idx], is greater than zero
+        // - The results have save = true
+        // - The second round corroborates that the same result is obtained
         for idx in 0..parameters_per_batch {
             if bests_checked[idx].1 && potential_calc(&parameter_vector[idx], &bests_checked[idx].0) > 0.0 {
-                parameter_results.push(
-                    &parameter_vector[idx]
-                );
-                best_vector_results.push(
-                    &bests_checked[idx].0
-                );
+
+                let (second_round_bests, second_round_iterations) = best1bin_algorithm(&parameter_vector[idx]);
+
+                if Variables::equals(&second_round_bests, &bests_checked[idx].0) && second_round_iterations < MAX_ITER && second_round_iterations > MIN_ITER {
+                    parameter_results.push(
+                        &parameter_vector[idx]
+                    );
+                    best_vector_results.push(
+                        &bests_checked[idx].0
+                    );
+                }
             }
         }
 
@@ -401,20 +399,12 @@ fn best1bin_algorithm(
 
                 // Verify that the mutated population exists within the variable limits
                 if mutated_population < VARIABLE_LIMITS[component_usize][0] {
-                    
-                    // This component of the mutated population was below the limits
-                    mutant_population[idx][component] = match component_usize {
-                        1 => mutated_population.rem_euclid(4.0 * PI), // In order to avoid border distorsions when phi component goes out of bounds, apply mod 4π
-                        _ => VARIABLE_LIMITS[component_usize][0]
-                    };
+
+                    mutant_population[idx][component] = VARIABLE_LIMITS[component_usize][0];
 
                 } else if mutated_population > VARIABLE_LIMITS[component_usize][1] {
 
-                    // This component of the mutated population was above the limits
-                    mutant_population[idx][component] = match component_usize {
-                        1 => mutated_population.rem_euclid(4.0 * PI), // In order to avoid border distorsions when phi component goes out of bounds, apply mod 4π
-                        _ => VARIABLE_LIMITS[component_usize][1]
-                    };
+                    mutant_population[idx][component] = VARIABLE_LIMITS[component_usize][1];
                 }
 
                 // Decide if mutate or not
@@ -457,3 +447,4 @@ fn best1bin_algorithm(
     // Return best individual
     (best_individual, iter)
 }
+

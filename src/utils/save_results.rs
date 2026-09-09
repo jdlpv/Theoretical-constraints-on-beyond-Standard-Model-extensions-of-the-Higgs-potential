@@ -1,7 +1,10 @@
 //===================== Imports =====================//
 
 use std::fs::OpenOptions;
-use std::io::{self, Write};
+use std::io::{
+    self,
+    Write
+};
 
 use crate::model::{
     parameters::Parameters,

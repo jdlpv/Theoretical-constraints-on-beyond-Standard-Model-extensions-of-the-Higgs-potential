@@ -1,6 +1,17 @@
 //===================== Imports =====================//
 
-use std::ops::{Add, Index, IndexMut, Mul, Sub};
+use std::ops::{
+    Add,
+    Index,
+    IndexMut,
+    Mul,
+    Sub
+};
+
+use crate::{
+    EPSILON,
+    PI
+};
 
 //===================== Struct =====================//
 
@@ -47,6 +58,23 @@ impl Variables {
             phi,
             chi
         }
+    }
+
+    /// This function checks if two variables are the same
+    /// 
+    /// ### Function parameters
+    /// 
+    /// * `var1: &Variables` - The first variable
+    /// * `var2: &Variables` - The second variable
+    /// 
+    /// ### Returns
+    /// 
+    /// * `bool` - True if both variables have the same value, false otherwise
+    pub fn equals(
+        var1: &Variables,
+        var2: &Variables
+    ) -> bool {
+        (var1.r - var2.r).abs() <= EPSILON && (var1.chi - var2.chi).abs() <= EPSILON && ((var1.phi - var2.phi).abs() <= EPSILON || ((var1.phi - var2.phi).abs() - 2.0 * PI).abs() <= EPSILON)
     }
 }
 

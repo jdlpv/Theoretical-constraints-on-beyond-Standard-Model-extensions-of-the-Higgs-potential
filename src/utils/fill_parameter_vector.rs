@@ -5,9 +5,12 @@ use rand::{
     rngs::SmallRng
 };
 
-use crate::model::{
-    parameters::Parameters, 
-    potential_types::PotentialType
+use crate::{
+    PI,
+    model::{
+        parameters::Parameters, 
+        potential_types::PotentialType
+    }
 };
 
 //===================== Function =====================//
@@ -90,9 +93,8 @@ pub fn fill_parameter_vector(
                 // In this subcase, rho_6 = rho_7 and alpha_7 = alpha_6 + π
                 // Note that alpha_6 limits have been changed in order to visualize the results better (given the π shift in alpha_7),
                 // however, this does not change anything since the potential is periodic in alpha
-                let pi: f64 = std::f64::consts::PI;
                 let rho_6: f64 = parameters_rng.random_range(parameters_limits[4][0]..=parameters_limits[4][1]);
-                let alpha_6: f64 = parameters_rng.random_range(-pi..=2.0 * pi);
+                let alpha_6: f64 = parameters_rng.random_range(-PI..=2.0 * PI);
 
                 parameter_vector.push(
                     Parameters::new(
@@ -103,7 +105,7 @@ pub fn fill_parameter_vector(
                         rho_6,
                         alpha_6,
                         rho_6,
-                        alpha_6 + pi,
+                        alpha_6 + PI,
                     )
                 );
             }
